@@ -8,12 +8,12 @@ class Card extends Component {
         <div className="rounded card width m-3 shadow">
           <img
             className="cardImgTop"
-            src={this.props.prod.imgS}
+            src={"https://picsum.photos/200/300/?random"}
             alt="Card cap"
           />
           <div className="card-body m-3 centreMe">
             <h5 className="card-title">{this.props.prod.title}</h5>
-            <p className="card-text">{this.props.prod.des}</p>
+            <p className="card-text">{this.props.prod.description}</p>
             <a
               href={"www.google.com"}
               className="btn btn-primary m-1 pull-left"
