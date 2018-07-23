@@ -1,10 +1,7 @@
 import "whatwg-fetch";
 
+// getProductsJson = this.getProductsJson.bind(this);
 class HttpService {
-  constructor() {
-    this.getProducts();
-  }
-
   getProducts = () => {
     var promise = new Promise((resolve, reject) => {
       fetch("http://localhost:3007/getproducts")
