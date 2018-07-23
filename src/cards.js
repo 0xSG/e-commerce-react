@@ -12,16 +12,9 @@ class Cards extends Component {
   constructor(prop) {
     super(prop);
     this.state = {
-      products: [
-        // {
-        //   title: "my product",
-        //   price: "453",
-        //   imgS: "https://picsum.photos/200/300/?random",
-        //   des: "This is my product title"
-        // },
-      ]
+      products: []
     };
-
+    //new module to fetch the json from database
     axios
       .get("http://localhost:3007/getproducts")
       .then(result => {
