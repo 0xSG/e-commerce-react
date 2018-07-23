@@ -2,11 +2,7 @@
   width: 18rem;
 }
 
-.centreMe {
+.aligner {
   margin-left: auto;
   margin-right: auto;
-}
-
-.minsize {
-  min-width: 300px;
 }

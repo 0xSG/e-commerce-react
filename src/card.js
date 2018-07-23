@@ -4,7 +4,7 @@ class Card extends Component {
   state = {};
   render() {
     return (
-      <div className="col-sm-3">
+      <div className="col-sm-3 m-3 minsize">
         <div className="rounded card width m-3 shadow">
           <img
             className="cardImgTop"
