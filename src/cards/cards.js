@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "./card";
+import Card from "../card/card";
 import "./cards.css";
 
 const axios = require("axios");

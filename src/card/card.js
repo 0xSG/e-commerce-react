@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../src/card.css";
+import "./card.css";
 class Card extends Component {
   state = {};
   render() {
@@ -8,7 +8,7 @@ class Card extends Component {
         <div className="rounded card width m-3 shadow">
           <img
             className="cardImgTop"
-            src={"https://picsum.photos/200/300/?random"}
+            src={this.props.prod.imgSrc}
             alt="Card cap"
           />
           <div className="card-body m-3 centreMe">

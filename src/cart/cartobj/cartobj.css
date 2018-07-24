@@ -1,0 +1,21 @@
+.imgstyle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.radiusSet {
+  border-radius: 50px;
+}
+
+.btnMargin {
+  margin: 12px;
+}
+
+.pushleft-10 {
+  margin-right: 10px;
+}
+
+.minset {
+  min-width: 200px;
+}
