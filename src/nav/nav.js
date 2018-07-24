@@ -5,70 +5,66 @@ class NavBar extends Component {
   state = {};
   render() {
     return (
-      <nav className="navbar navbar-inverse myNavbar">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <button
-              type="button"
-              className="navbar-toggle"
-              data-toggle="collapse"
-              data-target="#myNavbar"
-            >
-              <span className="icon-bar" />
-              <span className="icon-bar" />
-              <span className="icon-bar" />
-            </button>
-            <a className="navbar-brand" href="#">
-              My Store
+      <div>
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+          <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="#">
+                  Left
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="//codeply.com">
+                  Codeply
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="mx-auto order-0">
+            <a className="navbar-brand mx-auto" href="#">
+              SG Store
             </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target=".dual-collapse2"
+            >
+              <span className="navbar-toggler-icon" />
+            </button>
           </div>
-          <div className="collapse navbar-collapse" id="myNavbar">
-            <ul className="nav navbar-nav">
-              <li className="active">
-                <a href="#">Home</a>
-              </li>
-              <li className="dropdown">
-                <a className="dropdown-toggle" data-toggle="dropdown" href="#">
-                  What Do We Got<span className="caret" />
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a href="#">My</a>
-                  </li>
-                  <li>
-                    <a href="#">Sarathi</a>
-                  </li>
-                  <li>
-                    <a href="#">Assignment</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">
-                  <span className="glyphicon glyphicon-shopping-cart" /> My Cart
+          <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Right
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <i className="glyphicon glyphicon-tree-conifer" /> About Us
-                </a>
-              </li>
-            </ul>
-            <ul className="nav navbar-nav navbar-right">
-              <li>
-                <a href="#">
-                  <span className="glyphicon glyphicon-user" /> Sign Up
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span className="glyphicon glyphicon-log-in" /> Login
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Link
                 </a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     );
   }
 }

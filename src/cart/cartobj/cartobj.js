@@ -6,7 +6,7 @@ class CartObj extends Component {
   render() {
     return (
       <div className=" bg-secondary radiusSet minset">
-        <div className="row ">
+        <div className="row container p-1">
           <div className="col-4 ">
             <img
               className=" imgstyle"
@@ -17,7 +17,7 @@ class CartObj extends Component {
             <div className="btnMargin text-white">hello</div>
           </div>
           <div className="col-2">
-            <button className="radiusSet btnMargin ">X</button>
+            <button className=" roundedBtn ">X</button>
           </div>
         </div>
       </div>
